@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: distance-calculator
+  labels:
+    app: distance-calculator
+spec:
+  containers:
+    - name: distance-calculator
+      image: stacklabs/distance-calculator:0.0.1-debug
+      imagePullPolicy: Always
+      ports:
+        - name: http
+          containerPort: 8082
+

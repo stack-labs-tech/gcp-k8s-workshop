@@ -1,0 +1,9 @@
+ui:
+  search-url: http://${SEARCH_SERVICE_HOST}:${SEARCH_SERVICE_PORT}/
+  version: v1
+
+management.server.port: 8181
+
+spring:
+  sleuth:
+    propagation-keys: x-formation-search
